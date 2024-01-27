@@ -6,35 +6,39 @@
     </head>    
     <body>
         <!-- HEADER -->
-        <div>
-            <a name="start"/>        
+        <header>
+            <a id="top" name="start"></a>        
             <h1>Hause Special &reg;</h1>
             <h2>Music Blog</h2>        
             <br/>
-        </div>
+            <!-- NAVIGATION -->
+            <nav>
+                <a href="index.html">Home</a> | 
+                <a href="specialOfTheWeek.html">Special Of The Week</a>
+                <br/>
+            </nav>
+        </header>
 
-        <!-- NAVIGATION -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="specialOfTheWeek.html">Special Of The Week</a>
-            <br/>
-        </nav>
         <!-- INTRODUCTION -->
-        <div>
+        <section>
             <h3>Welcome to my site dedicated to House music</h3>
-            <img src="https://variety.com/wp-content/uploads/2022/07/Music-Streaming-Wars.jpg?w=1000&h=563&crop=1&resize=681%2C383"/>
-        </div>                
-        <!-- AUDIO -->
-        <h3>Introduction</h3>
-        <div>
-            <audio controls>
-                <source src="Media/Intro.mp3"/>
-                Audio not supported
-            </audio>
-        </div>
-        <div>
-            <p>I serve up a curated list of songs weekly that will satisfy your appetite</p>
-            <img src="https://www.dedevelopers.com/uploads/portfolio/7eb9eb7292aeda4c8ebe9aebf8abac1c.jpg"/>
+            <img src="https://variety.com/wp-content/uploads/2022/07/Music-Streaming-Wars.jpg?w=1000&h=563&crop=1&resize=681%2C383" alt="music notes, sounds waves, and womans face"/>                        
+            <!-- AUDIO -->        
+            <div>
+                <h3>Introduction</h3>
+                <audio controls>
+                    <source src="Media/Intro.mp3"/>
+                    Audio not supported
+                </audio>
+            </div>
+        </section>
+
+        <!-- ARTICLE -->
+        <article>
+            <p>
+                I serve up a curated list of songs weekly that will satisfy your appetite
+            </p>
+            <img src="https://www.dedevelopers.com/uploads/portfolio/7eb9eb7292aeda4c8ebe9aebf8abac1c.jpg" alt="chinese food menu"/>
             <p>
                 I have loved music my whole life but when I started college I started to find I had a passion for <a href="https://en.wikipedia.org/wiki/Electronica">electronica</a>.
             </p>
@@ -43,13 +47,13 @@
             heavy noise of <a href="https://en.wikipedia.org/wiki/Dubstep">dubstep</a> and the continuous melody of <a href="https://en.wikipedia.org/wiki/Trance_music">trance</a>.
             </p>
             <p>
-                I am no longer part of the club and rave scene but still enjoy the music and continue to appreciate its evolution over time.
+                I am no longer part of the club and rave scene but still enjoy <strong>electronica</strong> music and continue to appreciate its evolution over time.
             </p>
             <br/>
-        </div>
+        </article>
 
         <!-- MAIN -->
-        <article>
+        <main>
             <h2>Specials of the Week</h2>
             <table>
                 <tr>
@@ -101,11 +105,11 @@
                 * The selection is based on personal preference, I am not endorsed by any artist or label to promote their content.
             </p>
             <br/>
-        </article>
+        </main>
 
         <!-- PROMOTION -->
-        <div>
-            <h3>Next weeks menu includes:</h3>
+        <aside>
+            <h4>Next weeks menu includes:</h4>
             <ul>
                 <li>Deadmau5</li>
                 <li>Miike Snow</li>
@@ -114,21 +118,11 @@
                 <li>and more..</li>
             </ul>
             <br/>
-        </div>        
-
-        <!-- VIDEO -->        
-        <div>
-            <h3>Developer Behind the Scenes</h3>
-            <video width="320" height="240" controls>
-                <source src="Media/Dev_BehindTheScenes.mp4"/>
-                Video not supported
-            </video>
-        </div>
-        <br/>
+        </aside>                
 
         <!-- FOOTER -->
-        <div>
-            <h3>Contact Us</h3>
+        <footer>
+            <h3>Author</h3>
             <p>            
                 <a href="https://www.chrisasalgado.com/">Portfolio (In Progress)</a>
             </p>
@@ -136,7 +130,16 @@
                 <a href="https://companallc.com/" target="_blank">Business</a>
             </p>
             <br/>
+            <!-- VIDEO -->        
+            <div>
+                <h3>Developer Behind the Scenes</h3>
+                <video width="320" height="240" controls>
+                    <source src="Media/Dev_BehindTheScenes.mp4"/>
+                    Video not supported
+                </video>
+            </div>
+            <br/>
             <a href="#start">Top</a>
-        </div>
+        </footer>
     </body>
 </html>
