@@ -1,0 +1,66 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: orange;    
+}
+
+header {
+    background-color: aquamarine;
+}
+
+.title {
+    text-align: center;
+    border: 3px solid whitesmoke;
+}
+
+nav {
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(70, 70, 70);
+}
+
+.navbar li {
+    float: left
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+section, article {
+    text-align: center;
+}
+
+main {
+    background-color: blueviolet;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: orangered;
+    text-decoration: underline;
+}
+
+p {
+    font-family: cursive;
+    font-size: 1em;
+}
+
+table {
+    width: 100%;
+    padding: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;    
+}
