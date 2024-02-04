@@ -64,3 +64,8 @@ table {
 table, th, td {
     border: 1px solid black;    
 }
+
+.art {
+    text-align: center;
+    border: 3px solid royalblue;
+}
