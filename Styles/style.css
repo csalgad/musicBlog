@@ -1,28 +1,22 @@
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: orange;    
+/* ALIGNMENT */
+main, article, section, aside, .title, .art, .banner, .video {
+    text-align: center;    
 }
 
-header {
-    background-color: aquamarine;
-}
-
-.title {
-    text-align: center;
-    border: 3px solid whitesmoke;
-}
-
+/* LAYOUT */
 nav {
     padding: 10px;
     margin-left: 40px;
 }
 
-.navbar {
-    list-style-type: none;
-    margin: 0;
+table {
+    padding: 20px;
+    width: 100%;    
+}
+
+.navbar {    
     padding: 0;
-    overflow: hidden;
-    background-color: rgb(70, 70, 70);
+    margin: 0;    
 }
 
 .navbar li {
@@ -30,25 +24,13 @@ nav {
 }
 
 .navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    display: block;       
 }
 
-section, article {
-    text-align: center;
-}
-
-main {
-    background-color: blueviolet;
-    text-align: center;
-}
-
-h1, h2, h3 {
-    color: orangered;
-    text-decoration: underline;
+/* FONT */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
 }
 
 p {
@@ -56,16 +38,61 @@ p {
     font-size: 1em;
 }
 
-table {
-    width: 100%;
-    padding: 20px;
+/* COLOR */
+body {    
+    background-color: orange;    
+}
+
+header {
+    background-color: aquamarine;
+}
+
+main {
+    background-color: blueviolet;    
+}
+
+h1, h2, h3 {
+    color: orangered;    
+}
+
+.navbar {
+    background-color: rgb(70, 70, 70);
+}
+
+.navbar li a {    
+    color: white;        
+}
+
+.banner {
+    background-color: gray;
+}
+
+/* DECORATION */
+h1, h2, h3 {    
+    text-decoration: underline;
 }
 
 table, th, td {
     border: 1px solid black;    
 }
 
-.art {
-    text-align: center;
+.title {    
+    border: 3px solid whitesmoke;
+}
+
+.art {    
     border: 3px solid royalblue;
+}
+
+.banner {
+    box-shadow: 10px 5px 5px red;
+}
+
+.navbar {        
+    list-style-type: none;
+    overflow: hidden;    
+}
+
+.navbar li a {    
+    text-decoration: none;
 }
