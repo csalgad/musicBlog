@@ -2,29 +2,38 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title -->
         <title>Hause Special</title>
         
         <link rel="stylesheet" href="Styles/style.css"/>
     </head>    
     <body>
         <!-- HEADER -->
-        <header>
-            <a id="top" name="start"></a>        
+        <header class="header">
+            <a id="top" name="start"></a>
+            
+            <!-- Logo -->
             <div class="title">
                 <h1>Hause Special &reg;</h1>
                 <h2>Music Blog</h2>
             </div>        
-            <br/>
+
+            <!-- Hamburger Icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
             <!-- NAVIGATION -->
-            <nav>
-                <ul class="navbar">
+            <nav class="nav">
+                <ul class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="specialOfTheDay.html">Special Of The Day</a></li>
                     <li><a href="specialOfTheWeek.html">Special Of The Week</a></li>                
                     <li><a href="specialOfTheMonth.html">Special Of The Month</a></li>
                     <li><a href="aboutUs.html">About Us</a></li>
-                </ul>
-                <br/>
+                </ul>                
             </nav>
         </header>
 
