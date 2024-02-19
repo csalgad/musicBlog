@@ -20,6 +20,29 @@ main, article, section, aside, .title, .art, .banner, .video {
 }
 
 /* LAYOUT */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    padding: 5px;
+}
+
+.intro {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+aside {
+    margin-top: 50px;
+}
+
 nav {
     padding: 10px;
     margin-left: 40px;
