@@ -34,16 +34,30 @@ header {
 section {
     grid-column: 2;
     grid-row: 2;
+    transition: height 0.8s ease-in-out;
+}
+
+section:hover {
+    height: 10px;
 }
 
 article {     
     grid-column: 1 / 4;
-    grid-row: 3;
+    grid-row: 3;    
 }
 
 .container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.moveImage {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: moveDiagonal;
+    position: absolute;    
 }
 
 main {
@@ -113,8 +127,20 @@ p {
 }
 
 /* COLOR */
-body {    
+body {
     background-color: orange;    
+    background-image: url('https://images.pexels.com/photos/4448844/pexels-photo-4448844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item {
+    background-color: gray;
+}
+
+aside {
+    background-color: gray;
 }
 
 header {
@@ -269,8 +295,28 @@ table, th, td {
     top: 0;
 }
 
+/* ANMIATION */
+@keyframes moveDiagonal {
+    from {
+        transform: translate(0,0);
+        transform: rotate(0);
+    }
+    50% {
+        transform: translate(25%,25%);
+        transform: rotate(0.5turn);
+    }
+    to {
+        transform: translate(100%,100%);
+        transform: rotate(1turn);
+    }
+}
+
 /* Responsiveness */
 @media (min-width: 750px) {
+    body {
+        background-image: url('https://as2.ftcdn.net/v2/jpg/05/23/92/41/1000_F_523924150_Fbe7zEGKPbeNPKuL6DxM6v9vBQ7exADD.jpg');
+    }
+
     .nav {
         max-height: none;
         top: 0;
