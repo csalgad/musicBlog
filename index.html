@@ -2,38 +2,58 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title -->
         <title>Hause Special</title>
         
         <link rel="stylesheet" href="Styles/style.css"/>
     </head>    
     <body>
         <!-- HEADER -->
-        <header>
-            <a id="top" name="start"></a>        
+        <header class="header">
+            <a id="top" name="start"></a>
+            
+            <!-- Logo -->
             <div class="title">
                 <h1>Hause Special &reg;</h1>
                 <h2>Music Blog</h2>
             </div>        
-            <br/>
+
+            <!-- Hamburger Icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
             <!-- NAVIGATION -->
-            <nav>
-                <ul class="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="specialOfTheDay.html">Special Of The Day</a></li>
-                    <li><a href="specialOfTheWeek.html">Special Of The Week</a></li>                
-                    <li><a href="specialOfTheMonth.html">Special Of The Month</a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
-                </ul>
-                <br/>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a aria-label="Home" tabindex="1" href="index.html">Home</a></li>
+                    <li><a aria-label="Special Of The Day" tabindex="2" href="specialOfTheDay.html">Special Of The Day</a></li>
+                    <li><a aria-label="Special Of The Week" tabindex="3" href="specialOfTheWeek.html">Special Of The Week</a></li>                
+                    <li><a aria-label="Special Of The Month" tabindex="4" href="specialOfTheMonth.html">Special Of The Month</a></li>
+                    <li><a aria-label="About Us" tabindex="5" href="aboutUs.html">About Us</a></li>
+                </ul>                
             </nav>
         </header>
 
+        <div class="sections">
+            <button class="sectionMenuButton">Sections Menu</button>            
+            <ul class="sectionsContent">
+                <li><a aria-label="Intro" href="#intro">Introduction Section</a></li>
+                <li><a aria-label="Article" href="#middle">Article Section</a></li>
+                <li><a aria-label="Main" href="#main">Main Section</a></li>
+                <li><a aria-label="Promotion" href="#promo">Promotion Section</a></li>
+            </ul>
+        </div>
+
         <!-- INTRODUCTION -->
         <section>
+            <a id="section" name="intro"></a>
             <h3>Welcome to my site dedicated to House music</h3>
             <img src="https://variety.com/wp-content/uploads/2022/07/Music-Streaming-Wars.jpg?w=1000&h=563&crop=1&resize=681%2C383" alt="music notes, sounds waves, and womans face"/>                        
             <!-- AUDIO -->        
-            <div>
+            <div class="intro">
                 <h3>Introduction</h3>
                 <audio controls>
                     <source src="Media/Intro.mp3"/>
@@ -44,25 +64,36 @@
 
         <!-- ARTICLE -->
         <article>
-            <p>
-                I serve up a curated list of songs weekly that will satisfy your appetite
-            </p>
-            <img src="https://www.dedevelopers.com/uploads/portfolio/7eb9eb7292aeda4c8ebe9aebf8abac1c.jpg" alt="chinese food menu"/>
-            <p>
-                I have loved music my whole life but when I started college I started to find I had a passion for <a href="https://en.wikipedia.org/wiki/Electronica">electronica</a>.
-            </p>
-            <p>
-                Specifically <a href="https://en.wikipedia.org/wiki/House_music">house music</a> is that perfect middle ground between the 
-            heavy noise of <a href="https://en.wikipedia.org/wiki/Dubstep">dubstep</a> and the continuous melody of <a href="https://en.wikipedia.org/wiki/Trance_music">trance</a>.
-            </p>
-            <p>
-                I am no longer part of the club and rave scene but still enjoy <strong>electronica</strong> music and continue to appreciate its evolution over time.
-            </p>
+            <a id="article" name="middle"></a>            
+            <div class="container">
+                <div class="item">
+                    <img src="https://www.dedevelopers.com/uploads/portfolio/7eb9eb7292aeda4c8ebe9aebf8abac1c.jpg" alt="chinese food menu"/>
+                </div>
+                <div class="item" style="margin-top: 100px; margin-bottom: 250px">
+                    <p>
+                        I serve up a curated list of songs weekly that will satisfy your appetite
+                    </p>
+                    <br/>
+                    <p>
+                        I have loved music my whole life but when I started college I started to find I had a passion for <a href="https://en.wikipedia.org/wiki/Electronica">electronica</a>.
+                    </p>
+                    <br/>
+                    <p>
+                        Specifically <a href="https://en.wikipedia.org/wiki/House_music">house music</a> is that perfect middle ground between the 
+                    heavy noise of <a href="https://en.wikipedia.org/wiki/Dubstep">dubstep</a> and the continuous melody of <a href="https://en.wikipedia.org/wiki/Trance_music">trance</a>.
+                    </p>
+                    <br/>
+                    <p>
+                        I am no longer part of the club and rave scene but still enjoy <strong>electronica</strong> music and continue to appreciate its evolution over time.
+                    </p>
+                </div>            
+            </div>
             <br/>
         </article>
 
         <!-- MAIN -->
         <main>
+            <a id="main" name="main"></a>
             <h2>Specials of the Week</h2>
             <table>
                 <tr>
@@ -119,7 +150,8 @@
         </div>
 
         <!-- PROMOTION -->
-        <aside>
+        <aside style="margin-bottom: 50px">
+            <a id="aside" name="promo"></a>
             <h4>Next weeks menu includes:</h4>
             <ul>
                 <li>Deadmau5</li>
@@ -129,7 +161,52 @@
                 <li>and more..</li>
             </ul>
             <br/>
-        </aside>                
+        </aside>
+        
+        <div class="imageContainer">
+            <img width="200" height="150" class="moveImage" src="https://banner2.cleanpng.com/20190404/ula/kisspng-clip-art-cartwheel-vector-graphics-illustration-gy-5ca5a0c3a25a04.159113341554358467665.jpg" alt="man doing cartwheel">
+        </div>
+
+        <div>
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="fullname" required>
+                <br>
+                <label for="nickname">Nickname:</label>
+                <input type="text" id="nickname" name="nickname">
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phonenumber" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="emailaddress" required>
+                <br>
+                <fieldset>
+                    <legend>Preferred Communication Method</legend>
+                    <input type="radio" name="phone" value="phone">
+                    <label for="phone">Phone</label>
+                    <br>
+                    <input type="radio" name="email" value="email">
+                    <label for="email">Email</label>
+                </fieldset>
+                <br>
+                <label for="type">Type:</label>
+                <select id="type" name="typeselection">
+                    <option value="none">-NONE-</option>
+                    <option value="question">Question</option>
+                    <option value="answer">Answer</option>
+                    <option value="issue">Issue</option>
+                    <option value="request">Request</option>
+                    <option value="recommendation">Recommendation</option>
+                </select>
+                <br>
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
 
         <!-- FOOTER -->
         <footer>            
@@ -142,7 +219,7 @@
                 </video>
             </div>
             <br/>
-            <a href="#start">Top</a>
+            <a aria-label="Top" href="#start">Return to Top</a>
         </footer>
     </body>
 </html>
