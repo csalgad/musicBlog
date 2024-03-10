@@ -31,6 +31,20 @@ header {
     grid-column: 1 / 4;
 }
 
+.sectionsContent {
+    display: none;
+    background-color: lightgrey;
+}
+
+.sectionsContent a {
+    color: black;
+    text-decoration: none;
+}
+
+.sections:hover .sectionsContent {
+    display: block;
+}
+
 section {
     grid-column: 2;
     grid-row: 2;
@@ -53,11 +67,14 @@ article {
     gap: 10px;
 }
 
+.imageContainer {
+    margin-bottom: 100px;
+}
+
 .moveImage {
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-name: moveDiagonal;
-    position: absolute;    
+    animation-name: moveDiagonal;        
 }
 
 main {

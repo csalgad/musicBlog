@@ -38,8 +38,8 @@
         </header>
 
         <div class="sections">
-            <h3>Sections Menu</h3>
-            <ul>
+            <button class="sectionMenuButton">Sections Menu</button>            
+            <ul class="sectionsContent">
                 <li><a aria-label="Intro" href="#intro">Introduction Section</a></li>
                 <li><a aria-label="Article" href="#middle">Article Section</a></li>
                 <li><a aria-label="Main" href="#main">Main Section</a></li>
@@ -163,8 +163,49 @@
             <br/>
         </aside>
         
+        <div class="imageContainer">
+            <img width="200" height="150" class="moveImage" src="https://banner2.cleanpng.com/20190404/ula/kisspng-clip-art-cartwheel-vector-graphics-illustration-gy-5ca5a0c3a25a04.159113341554358467665.jpg" alt="man doing cartwheel">
+        </div>
+
         <div>
-            <img class="moveImage" src="https://banner2.cleanpng.com/20190404/ula/kisspng-clip-art-cartwheel-vector-graphics-illustration-gy-5ca5a0c3a25a04.159113341554358467665.jpg" alt="man doing cartwheel">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="fullname" required>
+                <br>
+                <label for="nickname">Nickname:</label>
+                <input type="text" id="nickname" name="nickname">
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phonenumber" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="emailaddress" required>
+                <br>
+                <fieldset>
+                    <legend>Preferred Communication Method</legend>
+                    <input type="radio" name="phone" value="phone">
+                    <label for="phone">Phone</label>
+                    <br>
+                    <input type="radio" name="email" value="email">
+                    <label for="email">Email</label>
+                </fieldset>
+                <br>
+                <label for="type">Type:</label>
+                <select id="type" name="typeselection">
+                    <option value="none">-NONE-</option>
+                    <option value="question">Question</option>
+                    <option value="answer">Answer</option>
+                    <option value="issue">Issue</option>
+                    <option value="request">Request</option>
+                    <option value="recommendation">Recommendation</option>
+                </select>
+                <br>
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
         </div>
 
         <!-- FOOTER -->
@@ -178,7 +219,7 @@
                 </video>
             </div>
             <br/>
-            <a aria-label="Top" href="#start">Top</a>
+            <a aria-label="Top" href="#start">Return to Top</a>
         </footer>
     </body>
 </html>
