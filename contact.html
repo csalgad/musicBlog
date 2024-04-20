@@ -4,7 +4,7 @@
         <meta charset="UTF-8"/>
         <title>Hause Special</title>
         
-        <link rel="stylesheet" href="Styles/style.css"/>
+        <link rel="stylesheet" href="Styles/style.css"/>        
     </head>    
     <body>
         <!-- HEADER -->
@@ -27,17 +27,26 @@
                 </ul>                
                 <br/>
             </nav>
-        </header> 
-
+        </header>
         <!-- MAIN -->
         <main>
-            <h3>Author</h3>
-            <p>            
-                <a href="https://www.chrisasalgado.com/">Portfolio (In Progress)</a>
-            </p>
-            <p>
-                <a href="https://companallc.com/" target="_blank">Business</a>
-            </p>                        
+            <h2>Contact Us</h2>
+            <form id="contactForm" onsubmit="return validateData()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="fullname" required>                
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="emailaddress" required>
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phonenumber">
+                <br>                            
+                <label for="message">Message</label>
+                <textarea id="message" name="message" maxlength="500" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
         </main>
+        <script src="Scripts/contact.js"></script>
     </body>
 </html>
