@@ -40,13 +40,23 @@
                 <br>
                 <label for="phone">Phone:</label>
                 <input type="tel" id="phone" name="phonenumber">
-                <br>                            
+                <br>       
+                <label for="topic">Topic:</label>
+                <select id="topic" name="topicselection">
+                    <option value="none">-NONE-</option>
+                    <option value="question">Question</option>
+                    <option value="answer">Answer</option>
+                    <option value="issue">Issue</option>
+                    <option value="request">Request</option>
+                    <option value="recommendation">Recommendation</option>
+                </select>
+                <br>                     
                 <label for="message">Message</label>
                 <textarea id="message" name="message" maxlength="500" required></textarea>
                 <br>
                 <button type="submit">Submit</button>
             </form>
         </main>
-        <script src="Scripts/contact.js"></script>
+        <script src="Scripts/contact.js"></script>        
     </body>
 </html>
